@@ -4,7 +4,10 @@
   "description": "Git 命令行增强与辅助",
   "main": "index.js",
   "scripts": {
-	  
+    
+  },
+  "bin": {
+    "gitt": "index.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +21,9 @@
   "bugs": {
     "url": "https://github.com/JasonGrass/git-command-helper/issues"
   },
-  "homepage": "https://github.com/JasonGrass/git-command-helper#readme"
+  "homepage": "https://github.com/JasonGrass/git-command-helper#readme",
+  "dependencies": {
+    "commander": "^8.3.0",
+    "shelljs": "^0.8.4"
+  }
 }
