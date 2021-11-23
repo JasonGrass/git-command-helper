@@ -1,6 +1,5 @@
 # Git 命令行增强与辅助
 
-
 ## 参考文献
 
 * js 执行 shell 命令
@@ -8,6 +7,7 @@
 [js执行shell命令的几种方式（Node）_cindy647的博客-CSDN博客_js执行shell脚本](https://blog.csdn.net/cindy647/article/details/108830841 )  
 [shelljs - npm](https://www.npmjs.com/package/shelljs )  
 [shelljs/shelljs: Portable Unix shell commands for Node.js](https://github.com/shelljs/shelljs )  
+[enquirer/enquirer: Stylish, intuitive and user-friendly prompts, for Node.js. Used by eslint, webpack, Generate, lint-staged, pm2, gluegun, hygen, GitHub Actions Toolkit, @airbnb/nimbus, and many others!](https://github.com/enquirer/enquirer )
 
 * 命令行参数解析
 
