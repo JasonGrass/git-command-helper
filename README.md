@@ -21,3 +21,7 @@
 [npm 命令行工具开发指南 - 掘金](https://juejin.cn/post/6956027274919411726 )  
 [如何使用 Node 开发一个命令行工具 | 山月行](https://shanyue.tech/node/cli.html#%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7%E4%B8%8E%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F-path )
 [前端扫盲-之打造一个Node命令行工具 - 知乎](https://zhuanlan.zhihu.com/p/34782812 )
+
+* 其它参考
+
+[Git打印且只打印本地分支名 - SegmentFault 思否](https://segmentfault.com/a/1190000020840822 )  
