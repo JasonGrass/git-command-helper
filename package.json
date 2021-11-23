@@ -1,0 +1,22 @@
+{
+  "name": "git-command-helper",
+  "version": "1.0.0",
+  "description": "Git 命令行增强与辅助",
+  "main": "index.js",
+  "scripts": {
+	  
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/JasonGrass/git-command-helper.git"
+  },
+  "keywords": [
+    "git"
+  ],
+  "author": "JasonGrass",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JasonGrass/git-command-helper/issues"
+  },
+  "homepage": "https://github.com/JasonGrass/git-command-helper#readme"
+}
