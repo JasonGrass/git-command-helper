@@ -7,7 +7,7 @@
     
   },
   "bin": {
-    "gitt": "index.js"
+    "gitt": "./src/index.js"
   },
   "repository": {
     "type": "git",
