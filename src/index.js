@@ -23,7 +23,7 @@ program
 program.parse(process.argv)
 
 // 命令的执行路径
-const dir = process.cwd();
+// const dir = process.cwd();
 
 // 解析命令行，获取命令配置
 const options = program.opts();
