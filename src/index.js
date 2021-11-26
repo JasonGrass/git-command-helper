@@ -10,39 +10,33 @@ const {
   program
 } = require('commander')
 const shell = require('shelljs');
-const utils = require("./utils")
-const handler = require("./handlers/pushNewBranch")
+const handler = require("./handlers")
 
-program
-  .option('-d, --debug', 'output extra debugging')
-  .option('-s, --small', 'small pizza size')
-  .option('-pn, --push-new <type>', 'push as a new branch')
-
-// program
-//   .command('test <branch>', 'push as a new branch')
-
-program.parse(process.argv)
-
-// 命令的执行路径
-// const dir = process.cwd();
-
-// 解析命令行，获取命令配置
-const options = program.opts();
-
-// console.log("exe dir:", dir);
-// console.log("options:", options);
-
+// 检查是否安装的 git
 if (!shell.which('git')) {
   shell.echo('Sorry, this script requires git');
   shell.exit(1);
 }
 
+// pn 命令，推送新分支
+program
+  .command('pn <branch>')
+  .action((branch)=>{
+    handler.pushNew(branch)
+  });
+
+// rs 命令，重置到同名远端分支
+program
+  .command("rs")
+  .action(()=>{
+    handler.reset()
+  });
+
+program.parse(process.argv)
+
+// 命令的执行路径
+// const dir = process.cwd();
+// console.log("exe dir:", dir);
+// console.log("options:", options);
+
 // shell.exec("git status")
-
-// 将当前分支 push 到一个新的分支
-const pushNew = options["pushNew"];
-if (!utils.isEmptyOrSpaces(pushNew)) {
-  handler.pushNew(pushNew)
-}
-
-
