@@ -1,5 +1,6 @@
 const utils = require("../utils")
 const shell = require('shelljs');
+const myConfig = require("../my.config")
 const {
     Confirm
   } = require('enquirer');
@@ -21,7 +22,7 @@ function pushNew(branch) {
     // console.log(currentBranch)
 
     // 构建推送命令
-    const command = `git push origin ${currentBranch}:t/liujunjie/${branch}`
+    const command = `git push origin ${currentBranch}:t/${myConfig.gitUserName}/${branch}`
     // 检查命令，确认执行
     const prompt = new Confirm({
         name: 'question',
