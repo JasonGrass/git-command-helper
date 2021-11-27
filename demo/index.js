@@ -62,18 +62,26 @@ const program = new Command();
 //     console.log(options);
 //   });
 
+// program
+//   .version("0.1.1")
+//   .command("join")
+//   .argument("<env>", "environment")
+//   .argument("<str...>", "string list")
+//   .option("-c, --check", "check option")
+//   .description("example program for variadic argument ")
+//   .action((env, str, options, command) => {
+//     console.log(env);
+//     console.log(str);
+//     console.log(options);
+//   });
+
 program
-  .version("0.1.1")
-  .command("join")
-  .argument("<env>", "environment")
-  .argument("<str...>", "string list")
-  .option("-c, --check", "check option")
-  .description("example program for variadic argument ")
-  .action((env, str, options, command) => {
-    console.log(env);
-    console.log(str);
-    console.log(options);
-  });
+  .version("0.1.0")
+  .command("install [name]", "install one or more packages") // index-install
+  .command("search [query]", "search with optional query", {
+    executableFile: "mySearchSubCommand",
+  })
+  .command("list", "list packages installed", { isDefault: true });
 
 // async function run() {
 //   /* code goes here */
