@@ -6,6 +6,8 @@
 
 * `gitt pn opt-abc`
 
+pn: pushNew
+
 将当前分支，推送到 origin，新分支名称为 t/yourname/opt-abc，
 这里的 yourname 在 `./src/my.config.secret.js` 中配置
 
@@ -13,6 +15,8 @@
 `gitt pn fix-some-bug` == `git push origin release:t/yourname/fix-some-bug`
 
 * `gitt rs`
+
+rs: reset
 
 重置当前分支到 origin 对应的分支，如当前分支为 dev，则相当于 git reset --hard origin/dev
 
