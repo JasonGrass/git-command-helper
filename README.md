@@ -1,5 +1,30 @@
 # Git 命令行增强与辅助
 
+依据个人习惯进行的 git 命令行增强。可以 fork 仓库修改成你喜欢的增强写法。
+
+## 当前支持的增强命令
+
+* `gitt pn opt-abc`
+
+将当前分支，推送到 origin，新分支名称为 t/yourname/opt-abc，
+这里的 yourname 在 `./src/my.config.secret.js` 中配置
+
+* `gitt rs`
+
+重置当前分支到 origin 对应的分支，如当前分支为 dev，则相当于 git reset --hard origin/dev
+
+## my.config.secret.js
+
+在 src 目录中，此文件被设置为了 gitignore，需要自己添加，内容为：
+
+```js
+module.exports = {
+    gitUserName: "yourname"
+}
+```
+
+当前就只有这一个配置项
+
 ## 参考文献
 
 * js 执行 shell 命令
