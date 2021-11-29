@@ -36,6 +36,8 @@ module.exports = {
 
 源码中使用 shelljs 执行命令时，其执行路径，与你原本的执行路径一致，不需要额外在代码中处理路径问题。
 
+demo 文件夹是 command.js 的 demo 代码，与 git 增强无关。
+
 ## 参考文献
 
 * js 执行 shell 命令
