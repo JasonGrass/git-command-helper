@@ -9,9 +9,15 @@
 将当前分支，推送到 origin，新分支名称为 t/yourname/opt-abc，
 这里的 yourname 在 `./src/my.config.secret.js` 中配置
 
+举例，你当前在 release 分支，则  
+`gitt pn fix-some-bug` == `git push origin release:t/yourname/fix-some-bug`
+
 * `gitt rs`
 
 重置当前分支到 origin 对应的分支，如当前分支为 dev，则相当于 git reset --hard origin/dev
+
+举例，你当前在 release 分支，则  
+`gitt rs` == `git reset --hard origin/release`
 
 ## my.config.secret.js
 
