@@ -26,19 +26,18 @@ function package(branch) {
   // console.log(currentBranch)
 
   // 构建推送命令
-  console.log('即将执行的命令，请确认:')
   let command = `git push origin ${currentBranch}:CheckDev -f`;
   if (!utils.isEmptyOrSpaces(branch)) {
     command = `git push origin ${currentBranch}:${branch} -f`;
-    return;
   }
 
   // 检查命令，确认执行
   const prompt = new Confirm({
     name: "question",
-    message: `continue? (type f for cancel)\n${command}`,
+    message: `即将执行的命令，请确认 (type f for cancel)\n${command}\n`,
     default: true,
   });
+
   prompt.run().then((answer) => {
     if (answer) {
       // 执行命令
