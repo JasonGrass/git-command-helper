@@ -27,6 +27,10 @@ rs: reset
 
 在 src 目录中，此文件被设置为了 gitignore，需要自己添加，内容为：
 
+```
+gitUserName: 用于生成分支时的用户名，如 t/yourname/fix-a-bug
+```
+
 ```js
 module.exports = {
     gitUserName: "yourname"
@@ -37,10 +41,12 @@ module.exports = {
 
 ## 使用
 
-拉取或者 fork 仓库之后，
-需要先执行 `npm link`，然后就可以全局使用命令 gitt 了（如果更新了 bin 的配置，则需要重新执行  npm link）
+拉取或者 fork 仓库之后，执行 `npm i` 安装依赖，  
+再需要执行 `npm link`，然后就可以全局使用命令 gitt 了（如果更新了 bin 的配置，则需要重新执行  npm link）
 
 如果你不喜欢 `gitt` 的命名，可以在 package.json 的 bin 配置中修改，修改之后执行 `npm link` 即可，然后就可以全局使用新增的命令了。
+
+如果修改或者增加了新的命令，则也需要执行 `npm link`
 
 ## 说明
 
