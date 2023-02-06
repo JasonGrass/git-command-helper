@@ -26,6 +26,11 @@ program.command("rs").action(() => {
   handler.reset();
 });
 
+// package 命令，打包
+program.command("package [branch]").action((branch) => {
+  handler.createPackage(branch)
+});
+
 program.parse(process.argv);
 
 // 命令的执行路径
